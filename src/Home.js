@@ -29,12 +29,12 @@ class Home extends Component {
     return (
       <div className="app">
         {this.props.navbar}
-        <div>
+        <div className="text-gray-400 bg-gray-900 body-font container">
           <ScrollContainer>
             <main className="text-gray-400 bg-gray-900 body-font">
               <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                  <About className="w-100"/>
+                  <About className="w-100" />
                 </Animator>
               </ScrollPage>
               <ScrollPage page={1}>
