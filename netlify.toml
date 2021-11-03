@@ -19,4 +19,8 @@
   force = true
   headers = {Access-Control-Allow-Origin = "*"}
 
-/api/*  http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/:splat  200
+[[redirects]]
+  from = "/api/*"
+  to = "http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/:splat"
+  status = 200
+  force = true
