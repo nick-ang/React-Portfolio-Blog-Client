@@ -19,7 +19,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar color="light" light expand="md">
+      <Navbar className="text-gray-400 bg-gray-900 body-font mb-20" color="light" light expand="md">
         <NavbarBrand tag={Link} to="/">
           Home
         </NavbarBrand>
