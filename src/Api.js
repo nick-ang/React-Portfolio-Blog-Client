@@ -1,4 +1,3 @@
-import { baseUrl } from "./constant";
 
 class Api {
   constructor(authToken) {
