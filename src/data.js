@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "NextJS, Typescript, BlitzJS",
     description:
       "Maintaining the website for Australias largest Hackathon. Creating a registrations app using blitz.js for the upcoming 2022 hackathon",
-    image: "./hack.png",
+    image: "./hack6.png",
     link: "https://www.unihack.net/",
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
       "Kotlin, Springboot, MySQL, ReactJs, AWS RDS, AWS Elastic Beanstalk",
     description:
       "The current website you are on! Built using React and Blogs stored using Kotlin Springboot API",
-    image: "./blog2.png",
+    image: "./blog4.png",
     link: "https://nick-ang.netlify.app/",
   },
 ];
