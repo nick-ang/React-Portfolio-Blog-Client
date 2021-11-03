@@ -32,6 +32,20 @@ class App extends Component {
             http-equiv="Content-Security-Policy"
             content="upgrade-insecure-requests"
           ></meta>
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="images/favicon.ico"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=PT+Sans&family=Poppins:wght@100&display=swap"
+            rel="stylesheet"
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          />
           <meta id="og-title" property="og:title" content="MyApp" />
           <meta id="og-image" property="og:image" content="path/to/image.jpg" />
         </MetaTags>

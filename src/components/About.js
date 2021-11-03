@@ -1,11 +1,15 @@
 import React from "react";
 import Lottie from "react-lottie-player";
 import lottieJson from "../animations/work.json";
+import arrowJson from "../animations/arrow3.json";
 
 export default function About() {
   return (
     <section id="about">
-      <div id = "about-container" className="container mx-auto flex flex-wrap py-20 md:flex-row flex-col h-full items-center">
+      <div
+        id="about-container"
+        className="container mx-auto flex flex-wrap md:flex-row flex-col h-full items-center"
+      >
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Nick.
@@ -33,11 +37,12 @@ export default function About() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <Lottie
-            loop
-            animationData={lottieJson}
-            play
-          />
+          <Lottie loop animationData={lottieJson} play />
+        </div>
+      </div>
+      <div className="container w-full flex pb-20 justify-center">
+        <div className="w-20 content-center">
+          <Lottie loop animationData={arrowJson} play />
         </div>
       </div>
     </section>
