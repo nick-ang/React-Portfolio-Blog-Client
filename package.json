@@ -54,5 +54,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "Blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com"
+  "proxy": "http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/"
 }
