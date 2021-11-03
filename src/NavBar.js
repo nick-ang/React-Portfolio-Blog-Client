@@ -36,7 +36,7 @@ class NavBar extends Component {
               <NavLink href="./Articles">Blogs</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href=".#about">About</NavLink>
+              <NavLink href="./#about">About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href=".#projects">Projects</NavLink>
