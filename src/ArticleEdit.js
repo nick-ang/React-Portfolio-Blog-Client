@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import { Alert, Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
+import React, { Component } from "react";
+import { Link, withRouter } from "react-router-dom";
+import {
+  Alert,
+  Button,
+  Container,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+} from "reactstrap";
 import { Editor } from "@tinymce/tinymce-react";
 import "draft-js/dist/Draft.css";
 
-
-
 class ArticleEdit extends Component {
-
   emptyItem = {
-    title: '',
-    content: '',
+    title: "",
+    content: "",
   };
 
   constructor(props) {
@@ -18,48 +23,52 @@ class ArticleEdit extends Component {
     this.state = {
       item: this.emptyItem,
       errorMessage: null,
-      isCreate: false
-
+      isCreate: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   async componentDidMount() {
-    this.state.isCreate = this.props.match.params.id === 'new'; // are we editing or creating?
+    this.state.isCreate = this.props.match.params.id === "new"; // are we editing or creating?
     if (!this.state.isCreate) {
       const response = await this.props.api.getById(this.props.match.params.id);
       const article = await response.json();
-      this.setState({item: article});
+      this.setState({ item: article });
     }
   }
 
   handleChange(content, event) {
     const value = content;
-    let item = {...this.state.item};
+    let item = { ...this.state.item };
     const name = event.targetElm.name;
     item[name] = value;
-    this.setState({item});
+    this.setState({ item });
   }
 
   async handleSubmit(event) {
     event.preventDefault();
-    const {item, isCreate} = this.state;
+    const { item, isCreate } = this.state;
 
-    let result = isCreate ? await this.props.api.create(item) : await this.props.api.update(item);
+    let result = isCreate
+      ? await this.props.api.create(item)
+      : await this.props.api.update(item);
 
     if (!result.ok) {
-      this.setState({errorMessage: `Failed to ${isCreate ? 'create' : 'update'} record: ${result.status} ${result.statusText}`})
+      this.setState({
+        errorMessage: `Failed to ${isCreate ? "create" : "update"} record: ${
+          result.status
+        } ${result.statusText}`,
+      });
     } else {
-      this.setState({errorMessage: null});
-      this.props.history.push('/articles');
+      this.setState({ errorMessage: null });
+      this.props.history.push("/articles");
     }
-
   }
 
   render() {
-    const {item, errorMessage, isCreate} = this.state;
-    const title = <h2>{isCreate ? 'Add Article' : 'Edit Article'}</h2>;
+    const { item, errorMessage, isCreate } = this.state;
+    const title = <h2>{isCreate ? "Add Article" : "Edit Article"}</h2>;
 
     return (
       <div>
@@ -83,15 +92,13 @@ class ArticleEdit extends Component {
                 />
                 <Editor
                   apiKey="emehi8uy1oa5o8lchnrih1issh91tfh2wn2l3iul0tjhr1eo"
-
-                initialValue={item.title || ""}
-                value={this.state.content}
-                textareaName="title" init=
-                {{
-                  height: 150,
-                  menubar: false,
-                }}
-                onEditorChange={this.handleChange}
+                  value={this.state.content}
+                  textareaName="title"
+                  init={{
+                    height: 150,
+                    menubar: false,
+                  }}
+                  onEditorChange={this.handleChange}
                 />
               </FormGroup>
               <FormGroup className="col-md-12 mb-3">
@@ -110,6 +117,11 @@ class ArticleEdit extends Component {
                   value={this.state.content}
                   textareaName="content"
                   init={{
+                    images_upload_url: "postAcceptor.php",
+                    automatic_uploads: false,
+                    plugins: "image paste",
+                    images_file_types:
+                      "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
                     height: 500,
                     menubar: true,
                   }}
