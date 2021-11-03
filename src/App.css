@@ -35,6 +35,11 @@ overflow-y: scroll; /* has to be scroll, not auto */
   /* font-size:10rem; */
 }
 
+#project-container{
+  padding-bottom: 100px;
+  padding-top: 75px;
+}
+
 .scroll-container {
   width: 100%;
 }
