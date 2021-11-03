@@ -29,7 +29,7 @@ class Home extends Component {
     return (
       <div className="app">
         {this.props.navbar}
-        <div className="container  mx-auto text-center">
+        <div className="container flex flex-col mx-auto text-center">
           <ScrollContainer className="container  mx-auto text-center">
             <main className="text-gray-400 bg-gray-900 body-font">
               <ScrollPage page={0}>
