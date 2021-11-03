@@ -3,7 +3,7 @@ export const projects = [
     title: "Saver",
     subtitle: "Ruby on Rails, PostgreSQL, JavaScript",
     description:
-      "An all in one productivity app where users can create widgets such as to-do lists, bookmarks, timers and calculators",
+      "An all in one productivity app where users can create widgets such as to-do lists, bookmarks, timers and calculators. A great app for everything in one place!",
     image: "./og.png",
     link: "https://www.monosaver.com",
   },
@@ -11,14 +11,15 @@ export const projects = [
     title: "PNP Task Manager",
     subtitle: "Ruby on Rails, PostgreSQL, JavaScript",
     description:
-      "A freelance application build for P&NP to assist project management including chatrooms, draggable kanbans, search, logins, admin, wikis, sticky notes and visualisations",
+      "A freelance application build for P&NP to assist project management including chatrooms, draggable kanbans, search, logins, admin, wikis, sticky notes and visualisations.",
     image: "./pnp.png",
     link: "https://pnp-task-manager.herokuapp.com/users/sign_in",
   },
   {
     title: "Unihack",
     subtitle: "NextJS, Typescript, BlitzJS",
-    description: "Maintaining the website for Australias largest Hackathon. Creating a registrations app using blitz.js for the upcoming 2022 hackathon",
+    description:
+      "Maintaining the website for Australias largest Hackathon. Creating a registrations app using blitz.js for the upcoming 2022 hackathon",
     image: "./hack.png",
     link: "https://www.unihack.net/",
   },
@@ -26,7 +27,8 @@ export const projects = [
     title: "Portfolio and Blog",
     subtitle:
       "Kotlin, Springboot, MySQL, ReactJs, AWS RDS, AWS Elastic Beanstalk",
-    description: "The current website you are on! Built using React and Blogs stored using Kotlin Springboot API",
+    description:
+      "The current website you are on! Built using React and Blogs stored using Kotlin Springboot API",
     image: "./blog2.png",
     link: "https://nick-ang.netlify.app/",
   },
