@@ -14,7 +14,6 @@
     "lottie-web": "^5.7.14",
     "mdbreact": "^5.1.0",
     "react": "^17.0.2",
-    "react-amazing-proxy": "^1.0.63",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^17.0.2",
@@ -27,7 +26,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node node_modules/react-amazing-proxy/start",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -54,5 +53,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/"
 }
