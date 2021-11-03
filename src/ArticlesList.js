@@ -17,8 +17,8 @@ const Article = (props) => (
     <h3>{props.name}</h3>
     <div className="article-body">
       <div className="subtitle-container">
-        <div className="text-white">{ReactHtmlParser(props.title)}</div>
-        <div className="text-white">{ReactHtmlParser(props.content)}</div>
+        <div >{ReactHtmlParser(props.title)}</div>
+        <div >{ReactHtmlParser(props.content)}</div>
       </div>
     </div>
     <div className="article-footer">
