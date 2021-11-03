@@ -29,8 +29,8 @@ class Home extends Component {
     return (
       <div className="app">
         {this.props.navbar}
-        <div className="text-gray-400 bg-gray-900 body-font container">
-          <ScrollContainer>
+        <div className="container  mx-auto text-center">
+          <ScrollContainer className="container  mx-auto text-center">
             <main className="text-gray-400 bg-gray-900 body-font">
               <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>

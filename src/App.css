@@ -3,6 +3,12 @@
   width:100%;
 }
 
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 *{
   width: 100%;
 }
