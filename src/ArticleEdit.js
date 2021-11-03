@@ -70,7 +70,15 @@ class ArticleEdit extends Component {
           <Form onSubmit={this.handleSubmit}>
             <div className="row">
               <FormGroup className="title col-md-8 mb-3">
-
+                <Label for="title">title</Label>
+                <Input
+                  type="text"
+                  name="title"
+                  id="title"
+                  value={item.title || ""}
+                  onChange={this.handleChange}
+                  autoComplete="title"
+                />
                 <Editor
                   value={this.state.content}
                   textareaName="title"
@@ -82,7 +90,15 @@ class ArticleEdit extends Component {
                 />
               </FormGroup>
               <FormGroup className="col-md-4 mb-3">
-
+                <Label for="content">Content</Label>
+                <Input
+                  type="text"
+                  name="content"
+                  id="content"
+                  value={item.content || ""}
+                  onChange={this.handleChange}
+                  autoComplete="phone"
+                />
                 <Editor
                   id="content"
                   value={this.state.content}
