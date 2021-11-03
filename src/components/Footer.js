@@ -20,8 +20,9 @@ const FooterPage = () => {
             </div>
             <br />
           </div>
-          &copy; {new Date().getFullYear()} Copyright{" "}
+          &copy; {new Date().getFullYear()} Copyright - Coded by Nick Ang{" "}
           <a href="https://www.linkedin.com/in/nick-c-ang/"> </a>
+          <br />
           <br />
           <br />
         </MDBContainer>
