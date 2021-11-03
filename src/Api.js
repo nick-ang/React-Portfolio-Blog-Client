@@ -9,9 +9,9 @@ class Api {
     "Content-Type": "application/json",
   };
 
-  // BASE_URL = "/api/";
+  BASE_URL = "/api/";
 
-  BASE_URL = "/api/articles";
+  // BASE_URL = "/api/articles";
 
   createHeaders() {
     return this.authToken
