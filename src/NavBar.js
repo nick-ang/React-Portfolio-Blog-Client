@@ -33,22 +33,22 @@ class NavBar extends Component {
           <Nav className="ml-auto sm-p20" navbar>
           <br/>
             <NavItem>
-              <NavLink href="/Articles">Blogs</NavLink>
+              <NavLink href="./Articles">Blogs</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#about">About</NavLink>
+              <NavLink href=".#about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#projects">Projects</NavLink>
+              <NavLink href=".#projects">Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#skills">Skills</NavLink>
+              <NavLink href=".#skills">Skills</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              <NavLink href=".#testimonials">Testimonials</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#contact">Hi 👋🏼</NavLink>
+              <NavLink href=".#contact">Hi 👋🏼</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/nick-ang" target="_blank">

@@ -66,38 +66,54 @@ class ArticleEdit extends Component {
         {this.props.navbar}
         <Container style={{ textAlign: "left" }}>
           {title}
+          <br />
           {errorMessage ? <Alert color="warning">{errorMessage}</Alert> : null}
           <Form onSubmit={this.handleSubmit}>
             <div className="row">
-              <FormGroup className="title col-md-8 mb-3">
-                <Label for="title">title</Label>
+              <FormGroup className="title col-md-12 mb-3">
+                <Label for="title">Title</Label>
                 <Input
-                  type="text"
+                  type="hidden"
                   name="title"
                   id="title"
                   value={item.title || ""}
                   onChange={this.handleChange}
                   autoComplete="title"
+                  readonly
                 />
                 <Editor
-                  value={this.state.content}
-                  textareaName="title"
-                  init={{
-                    height: 500,
-                    menubar: false,
-                  }}
-                  onEditorChange={this.handleChange}
+                  apiKey="emehi8uy1oa5o8lchnrih1issh91tfh2wn2l3iul0tjhr1eo"
+
+                initialValue={item.title || ""}
+                value={this.state.content}
+                textareaName="title" init=
+                {{
+                  height: 150,
+                  menubar: false,
+                  plugins: [
+                    "advlist autolink lists link image",
+                    "charmap print preview anchor help",
+                    "searchreplace visualblocks code",
+                    "insertdatetime media table paste wordcount",
+                  ],
+                  toolbar:
+                    "undo redo | formatselect | bold italic | \
+            alignleft aligncenter alignright | \
+            bullist numlist outdent indent | help",
+                }}
+                onEditorChange={this.handleChange}
                 />
               </FormGroup>
-              <FormGroup className="col-md-4 mb-3">
+              <FormGroup className="col-md-12 mb-3">
                 <Label for="content">Content</Label>
                 <Input
-                  type="text"
                   name="content"
                   id="content"
                   value={item.content || ""}
                   onChange={this.handleChange}
                   autoComplete="phone"
+                  readonly
+                  type="hidden"
                 />
                 <Editor
                   id="content"
@@ -105,7 +121,7 @@ class ArticleEdit extends Component {
                   textareaName="content"
                   init={{
                     height: 500,
-                    menubar: false,
+                    menubar: true,
                   }}
                   onEditorChange={this.handleChange}
                 />

@@ -52,7 +52,7 @@ body {
 body {
 overflow-y: scroll; /* has to be scroll, not auto */
 -webkit-overflow-scrolling: touch;
-font-family: averta_stdbold;
+
 }
 
 @media (min-width:500px) {
