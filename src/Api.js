@@ -9,7 +9,8 @@ class Api {
     "Content-Type": "application/json",
   };
 
-  BASE_URL = "/api/articles";
+  BASE_URL =
+    "/api/articles";
 
   createHeaders() {
     return this.authToken
@@ -21,8 +22,9 @@ class Api {
   }
 
   async getAll() {
-    return await fetch(this.BASE_URL, {
+    return await fetch('http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles/', {
       method: "GET",
+      mode: "no-cors",
       headers: this.createHeaders(),
     });
   }
