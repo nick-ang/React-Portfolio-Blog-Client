@@ -29,7 +29,7 @@ export default function Projects() {
               <div data-aos="fade" className="rounded flex relative">
                 <img
                   alt="gallery"
-                  className="absolute inset-0 object-cover rounded-3xl object-center"
+                  className="absolute inset-0 object-cover rounded-3xl object-left"
                   src={project.image}
                   style={{ width: 600, height: 270 }}
                 />
