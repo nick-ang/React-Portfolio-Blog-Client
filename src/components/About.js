@@ -42,7 +42,12 @@ export default function About() {
       </div>
       <div className="container w-full flex pb-20 justify-center">
         <div className="w-20 content-center">
-          <Lottie loop animationData={arrowJson} play />
+          <a
+            href="#projects"
+            className=""
+          >
+            <Lottie loop animationData={arrowJson} play />
+          </a>
         </div>
       </div>
     </section>
