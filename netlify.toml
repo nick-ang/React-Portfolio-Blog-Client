@@ -5,5 +5,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  /api/* http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/:splat 200
-  /* /index.html 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "Blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/:splat"
+  status = 200
+  force = true

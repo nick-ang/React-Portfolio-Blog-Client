@@ -1,0 +1,88 @@
+Arguments: 
+  /Users/nicholasang/.nvm/versions/node/v14.15.5/bin/node /Users/nicholasang/.nvm/versions/node/v14.15.5/bin/yarn start
+
+PATH: 
+  ./bin:./node_modules/.bin:/Users/nicholasang/.nvm/versions/node/v14.15.5/bin:/Users/nicholasang/.pyenv/bin:/Users/nicholasang/.rbenv/shims:/Users/nicholasang/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:./bin:./node_modules/.bin:/Users/nicholasang/.nvm/versions/node/v14.15.5/bin:/Users/nicholasang/.pyenv/bin:/Users/nicholasang/.rbenv/shims:/Users/nicholasang/.rbenv/bin:/usr/local/sbin:/usr/local/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.5
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/nicholasang/Documents/blog/package.json: Unexpected token / in JSON at position 1382
+      at JSON.parse (<anonymous>)
+      at /Users/nicholasang/.nvm/versions/node/v14.15.5/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/nicholasang/.nvm/versions/node/v14.15.5/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/nicholasang/.nvm/versions/node/v14.15.5/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@craco/craco": "^5.9.0",
+      "@heroicons/react": "^1.0.1",
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "animate.css": "^4.1.1",
+      "aos": "^3.0.0-beta.6",
+      "bootstrap": "^4.6.1",
+      "lottie-web": "^5.7.14",
+      "mdbreact": "^5.1.0",
+      "react": "^17.0.2",
+      "react-animate-on-scroll": "^2.1.5",
+      "react-bootstrap": "^0.32.4",
+      "react-dom": "^17.0.2",
+      "react-lottie-player": "^1.4.1",
+      "react-router-dom": "^5.3.0",
+      "react-scripts": "4.0.3",
+      "react-scroll-motion": "^0.2.1",
+      "reactstrap": "^9.0.0",
+      "styled-components": "^5.3.3",
+      "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+      "start": "craco start",
+      "build": "craco build",
+      "test": "craco test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "devDependencies": {
+      "autoprefixer": "^9.8.8",
+      "postcss": "^7.0.39",
+      "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    // "proxy": "http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
