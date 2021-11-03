@@ -19,7 +19,7 @@ export const projects = [
     title: "Unihack",
     subtitle: "NextJS, Typescript, BlitzJS",
     description:
-      "Maintaining the website for Australias largest Hackathon. Creating a registrations app using blitz.js for the upcoming 2022 hackathon",
+      "Maintaining the website for Australias largest Hackathon. Creating a registrations app using blitz.js for the upcoming 2022 hackathon to handle 1000s of registrations",
     image: "./hack7.png",
     link: "https://www.unihack.net/",
   },
