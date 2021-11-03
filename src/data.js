@@ -3,7 +3,7 @@ export const projects = [
     title: "Saver",
     subtitle: "Ruby on Rails, PostgreSQL, JavaScript",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "An all in one productivity app where users can create widgets such as to-do lists, bookmarks, timers and calculators",
     image: "./og.png",
     link: "https://www.monosaver.com",
   },
@@ -11,25 +11,24 @@ export const projects = [
     title: "PNP Task Manager",
     subtitle: "Ruby on Rails, PostgreSQL, JavaScript",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A freelance application build for P&NP to assist project management including chatrooms, draggable kanbans, search, logins, admin, wikis, sticky notes and visualisations",
     image: "./pnp.png",
     link: "https://pnp-task-manager.herokuapp.com/users/sign_in",
   },
   {
     title: "Unihack",
     subtitle: "NextJS, Typescript",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    description: "Maintaining the website for Australias largest Hackathon",
     image: "./hack.png",
     link: "https://www.unihack.net/",
   },
   {
     title: "Portfolio and Blog",
-    subtitle: "Kotlin, Springboot, MySQL, ReactJs",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    subtitle:
+      "Kotlin, Springboot, MySQL, ReactJs, AWS RDS, AWS Elastic Beanstalk",
+    description: "The current website you are on!",
     image: "./blog.png",
-    link: "https://www.unihack.net/",
+    link: "https://nick-ang.netlify.app/",
   },
 ];
 
@@ -58,5 +57,5 @@ export const skills = [
   "Kotlin",
   "Springboot (Maven/Gradle)",
   "Java",
-  "SQL"
+  "SQL",
 ];
