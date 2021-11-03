@@ -9,8 +9,9 @@ class Api {
     "Content-Type": "application/json",
   };
 
-  BASE_URL =
-    "/api/articles";
+  BASE_URL = "/api/";
+
+  // BASE_URL = "/api/articles";
 
   createHeaders() {
     return this.authToken
@@ -22,32 +23,28 @@ class Api {
   }
 
   async getAll() {
-    return await fetch('/api/articles', {
-
+    return await fetch(this.BASE_URL, {
       method: "GET",
       headers: this.createHeaders(),
     });
   }
 
   async getById(id) {
-    return await fetch(
-      `/api/articles/${id}`,
-      {
-        method: "GET",
-        headers: this.createHeaders(),
-      }
-    );
+    return await fetch(`${this.BASE_URL}/${id}`, {
+      method: "GET",
+      headers: this.createHeaders(),
+    });
   }
 
   async delete(id) {
-    return await fetch(`/api/articles/${id}`, {
+    return await fetch(`${this.BASE_URL}/${id}`, {
       method: "DELETE",
       headers: this.createHeaders(),
     });
   }
 
   async update(item) {
-    return await fetch(`/api/articles/${item.id}`, {
+    return await fetch(`${this.BASE_URL}/${id}`, {
       method: "PUT",
       headers: this.createHeaders(),
       body: JSON.stringify(item),
@@ -55,7 +52,7 @@ class Api {
   }
 
   async create(item) {
-    return await fetch('/api/articles', {
+    return await fetch(this.BASE_URL, {
       method: "POST",
       headers: this.createHeaders(),
       body: JSON.stringify(item),
