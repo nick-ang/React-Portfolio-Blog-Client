@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
         <div className="flex flex-wrap ">
           {projects.map((project) => (
-            <div className="p-4">
+            <div className=" lg:w-1/2 p-4">
               <div data-aos="fade" className="rounded flex relative">
                 <img
                   alt="gallery"
@@ -33,7 +33,7 @@ export default function Projects() {
                   src={project.image}
                   style={{ width: 600, height: 270 }}
                 />
-                <div className="px-8 py-10 relative z-10 w-100 border-4 rounded-3xl border-gray-800 bg-gray-800 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-100 mb-1 border-4 rounded-3xl border-gray-800 bg-gray-800 opacity-0 hover:opacity-100">
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
