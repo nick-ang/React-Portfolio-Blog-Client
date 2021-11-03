@@ -22,7 +22,7 @@ class Api {
   }
 
   async getAll() {
-    return await fetch('/api/', {
+    return await fetch('http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles', {
       method: "GET",
       headers: this.createHeaders(),
     });
@@ -30,7 +30,7 @@ class Api {
 
   async getById(id) {
     return await fetch(
-      `/api/${id}`,
+      `http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles/${id}`,
       {
         method: "GET",
         headers: this.createHeaders(),
@@ -39,14 +39,14 @@ class Api {
   }
 
   async delete(id) {
-    return await fetch(`/api/${id}`, {
+    return await fetch(`http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles/${id}`, {
       method: "DELETE",
       headers: this.createHeaders(),
     });
   }
 
   async update(item) {
-    return await fetch(`/api/${item.id}`, {
+    return await fetch(`http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles/${item.id}`, {
       method: "PUT",
       headers: this.createHeaders(),
       body: JSON.stringify(item),
@@ -54,7 +54,7 @@ class Api {
   }
 
   async create(item) {
-    return await fetch('/api/', {
+    return await fetch('http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles', {
       method: "POST",
       headers: this.createHeaders(),
       body: JSON.stringify(item),
