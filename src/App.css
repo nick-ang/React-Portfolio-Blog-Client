@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.about-container {
+  height: 70vh;
+}
+
 html,
 body {
   width: auto !important;
