@@ -29,8 +29,8 @@ class Home extends Component {
     return (
       <div className="app">
         {this.props.navbar}
-        <div >
-          <ScrollContainer className="container mx-auto text-center">
+        <div>
+          {/* <ScrollContainer className="container mx-auto text-center">
             <main className="text-gray-400 bg-gray-900 body-font">
               <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
@@ -58,7 +58,14 @@ class Home extends Component {
                 </Animator>
               </ScrollPage>
             </main>
-          </ScrollContainer>
+          </ScrollContainer> */}
+          <main>
+            <About />
+            <Projects />
+            <Skills />
+            <Testimonials />
+            <Contact />
+          </main>
         </div>
       </div>
     );

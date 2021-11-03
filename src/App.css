@@ -14,6 +14,16 @@ overflow-y: scroll; /* has to be scroll, not auto */
 -webkit-overflow-scrolling: touch;
 }
 
+@media (min-width:500px) {
+    .caption-2 .action-footer {
+        margin:0;
+        position: absolute;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+    }
+}
+
 .maincontainer {
   display: flex;
   flex-direction: column;
