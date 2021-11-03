@@ -1,0 +1,18 @@
+import React, { useEffect, createRef } from "react";
+import "./App.css";
+
+import lottie from "lottie-web";
+import animation from "./animations/happy.json";
+
+const App = () => {
+  let animationContainer = createRef();
+
+  return (
+    <div className="App">
+        <div className="animation-container" ref={animationContainer} />
+        <div>Bodymovin Animations in React</div>
+    </div>
+  );
+};
+
+export default App;
