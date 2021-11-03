@@ -23,6 +23,7 @@ class Api {
 
   async getAll() {
     return await fetch('/api/', {
+
       method: "GET",
       headers: this.createHeaders(),
     });

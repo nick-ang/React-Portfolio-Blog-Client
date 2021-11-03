@@ -99,7 +99,7 @@ class ArticleEdit extends Component {
               <Button color="primary" type="submit">
                 Save
               </Button>{" "}
-              <Button color="secondary" tag={Link} to="/coffee-shops">
+              <Button color="secondary" tag={Link} to="/articles">
                 Cancel
               </Button>
             </FormGroup>

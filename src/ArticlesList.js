@@ -4,7 +4,11 @@ import {
   Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Markup } from "interweave";
+import ReactHtmlParser, {
+  processNodes,
+  convertNodeToElement,
+  htmlparser2,
+} from "react-html-parser";
 
 
 
@@ -13,8 +17,8 @@ const Article = (props) => (
     <h3>{props.name}</h3>
     <div className="article-body">
       <div className="subtitle-container">
-        <Markup content={props.title} />
-        <Markup content={props.content} />
+        <div className="text-white">{ReactHtmlParser(props.title)}</div>
+        <div className="text-white">{ReactHtmlParser(props.content)}</div>
       </div>
     </div>
     <div className="article-footer">
