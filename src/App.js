@@ -6,8 +6,11 @@ import ArticlesList from './ArticlesList';
 import ArticleEdit from './ArticleEdit';
 import Api from './Api';
 import NavBar from './NavBar';
+import MetaTags from "react-meta-tags";
 
 const api = new Api();
+
+
 
 class App extends Component {
 
@@ -15,27 +18,45 @@ class App extends Component {
     const navbar = <NavBar/>;
 
 
-    return (
 
+    return (
       <Router>
+        <MetaTags>
+          <title>Page 1</title>
+          <meta
+            id="meta-description"
+            name="description"
+            content="Some description."
+          />
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+          ></meta>
+          <meta id="og-title" property="og:title" content="MyApp" />
+          <meta id="og-image" property="og:image" content="path/to/image.jpg" />
+        </MetaTags>
         <Switch>
           <Route
-            path='/'
+            path="/"
             exact={true}
-            render={(props) => <Home {...props} api={api} navbar={navbar}/>}
+            render={(props) => <Home {...props} api={api} navbar={navbar} />}
           />
           <Route
-            path='/articles'
+            path="/articles"
             exact={true}
-            render={(props) => <ArticlesList {...props} api={api} navbar={navbar}/>}
+            render={(props) => (
+              <ArticlesList {...props} api={api} navbar={navbar} />
+            )}
           />
           <Route
-            path='/articles/:id'
-            render={(props) => <ArticleEdit {...props} api={api} navbar={navbar}/>}
+            path="/articles/:id"
+            render={(props) => (
+              <ArticleEdit {...props} api={api} navbar={navbar} />
+            )}
           />
         </Switch>
       </Router>
-    )
+    );
   }
 }
 

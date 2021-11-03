@@ -5,7 +5,9 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
 const Article = (props) => (
+
   <div className="article-container p-2 m-2 d-flex flex-column">
     <h3>{props.name}</h3>
     <div className="article-body">
