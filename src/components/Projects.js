@@ -1,9 +1,14 @@
 import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, {useEffect} from "react";
 import { projects } from "../data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Projects() {
+  useEffect(() => {
+   AOS.init({duration: 1000});
+  },[]);
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -16,7 +21,7 @@ export default function Projects() {
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a href={project.link} key={project.image} className="sm:w-1/2 p-4">
-              <div className="flex relative">
+              <div  data-aos="flip-left" className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 object-cover object-center"
