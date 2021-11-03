@@ -18,10 +18,10 @@ export default function Projects() {
             Apps I've Built
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap ">
           {projects.map((project) => (
             <a href={project.link} key={project.image} className="sm:w-1/2 p-4">
-              <div  data-aos="flip-left" className="flex relative">
+              <div  data-aos="fade" className="flex relative">
                 <img
                   alt="gallery"
                   className="absolute inset-0 object-cover object-center"
