@@ -36,7 +36,7 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-2/6">
+        <div className="lg:max-w-lg lg:w-full md:w-1/6 w-1/6">
           <Lottie loop animationData={lottieJson} play />
         </div>
       </div>
