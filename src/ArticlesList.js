@@ -4,21 +4,26 @@ import {
   Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Markup } from "interweave";
+
 
 
 const Article = (props) => (
-
   <div className="article-container p-2 m-2 d-flex flex-column">
     <h3>{props.name}</h3>
     <div className="article-body">
       <div className="subtitle-container">
-        <div>Title: {props.title}</div>
-        <div>Content: {props.content}</div>
+        <Markup content={props.title} />
+        <Markup content={props.content} />
       </div>
     </div>
     <div className="article-footer">
-      <Button color="secondary" tag={Link} to={'/articles/' + props.id}>Edit</Button>
-      <Button color="danger" onClick={() => props.remove(props.id)}>Delete</Button>
+      <Button color="secondary" tag={Link} to={"/articles/" + props.id}>
+        Edit
+      </Button>
+      <Button color="danger" onClick={() => props.remove(props.id)}>
+        Delete
+      </Button>
     </div>
   </div>
 );
@@ -67,6 +72,7 @@ class ArticlesList extends Component {
     }
   }
 
+
   render() {
     const {articles, isLoading, errorMessage} = this.state;
 
@@ -81,6 +87,7 @@ class ArticlesList extends Component {
           <h3 className="articles-title">Articles</h3>
           <Button color="success" tag={Link} to="/articles/new">Add New</Button>
         </div>
+
         {errorMessage ?
           <div className="d-flex flex-row justify-content-center">
             <Alert color="warning" style={{flex:1, maxWidth:'80%'}}>

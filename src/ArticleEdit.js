@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Alert, Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Editor } from "@tinymce/tinymce-react";
+import "draft-js/dist/Draft.css";
+
+
 
 class ArticleEdit extends Component {
 
@@ -15,6 +19,7 @@ class ArticleEdit extends Component {
       item: this.emptyItem,
       errorMessage: null,
       isCreate: false
+
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,11 +34,10 @@ class ArticleEdit extends Component {
     }
   }
 
-  handleChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+  handleChange(content, event) {
+    const value = content;
     let item = {...this.state.item};
+    const name = event.targetElm.name;
     item[name] = value;
     this.setState({item});
   }
@@ -60,32 +64,45 @@ class ArticleEdit extends Component {
     return (
       <div>
         {this.props.navbar}
-        <Container style={{textAlign: 'left'}}>
+        <Container style={{ textAlign: "left" }}>
           {title}
-          {errorMessage ?
-            <Alert color="warning">
-              {errorMessage}
-            </Alert> : null
-          }
+          {errorMessage ? <Alert color="warning">{errorMessage}</Alert> : null}
           <Form onSubmit={this.handleSubmit}>
             <div className="row">
-                            <FormGroup className="col-md-8 mb-3">
-                              <Label for="name">Title</Label>
-                              <Input type="text" name="title" id="name" value={item.title || ''}
-                                     onChange={this.handleChange} autoComplete="name"/>
-                            </FormGroup>
-                            <FormGroup className="col-md-4 mb-3">
-                              <Label for="phone">Content</Label>
-                              <Input type="text" name="content" id="phone" value={item.content || ''}
-                                     onChange={this.handleChange} autoComplete="phone"/>
-                            </FormGroup>
+              <FormGroup className="title col-md-8 mb-3">
+
+                <Editor
+                  value={this.state.content}
+                  textareaName="title"
+                  init={{
+                    height: 500,
+                    menubar: false,
+                  }}
+                  onEditorChange={this.handleChange}
+                />
+              </FormGroup>
+              <FormGroup className="col-md-4 mb-3">
+
+                <Editor
+                  id="content"
+                  value={this.state.content}
+                  textareaName="content"
+                  init={{
+                    height: 500,
+                    menubar: false,
+                  }}
+                  onEditorChange={this.handleChange}
+                />
+              </FormGroup>
             </div>
-           <FormGroup>
-              <Button color="primary" type="submit">Save</Button>{' '}
-              <Button color="secondary" tag={Link} to="/coffee-shops">Cancel</Button>
+            <FormGroup>
+              <Button color="primary" type="submit">
+                Save
+              </Button>{" "}
+              <Button color="secondary" tag={Link} to="/coffee-shops">
+                Cancel
+              </Button>
             </FormGroup>
-
-
           </Form>
         </Container>
       </div>

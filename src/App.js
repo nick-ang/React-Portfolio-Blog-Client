@@ -41,6 +41,11 @@ class App extends Component {
             href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=PT+Sans&family=Poppins:wght@100&display=swap"
             rel="stylesheet"
           />
+          <script
+            src="https://cdn.tiny.cloud/1/emehi8uy1oa5o8lchnrih1issh91tfh2wn2l3iul0tjhr1eo/tinymce/5/tinymce.min.js"
+            referrerpolicy="origin"
+          ></script>
+
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             rel="stylesheet"
