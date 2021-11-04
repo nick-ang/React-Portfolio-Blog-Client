@@ -21,7 +21,7 @@ const Article = (props) => (
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
-          <h3 className=" sm:text-2xl lg:text-3xl text-center text-white">
+          <h3 className=" sm:text-3xl lg:text-3xl text-3xl text-center text-white">
             {ReactHtmlParser(props.title)}
           </h3>
           <br />
@@ -105,10 +105,13 @@ class ArticlesList extends Component {
     return (
       <div>
         {this.props.navbar}
-        <div className=" mt-20 lg:mt-20 justify-content-between">
+        <div
+          data-aos="fade-right"
+          className=" mt-20 lg:mt-20 justify-content-between"
+        >
           <br />
           <br />
-          <h1 className="title-font lg:text-5xl sm:text-4xl mb-4 font-medium text-center text-white">
+          <h1 className="title-font lg:text-5xl text-5xl mb-4 font-medium text-center text-white">
             Blog Articles 📚
           </h1>
           <br />
