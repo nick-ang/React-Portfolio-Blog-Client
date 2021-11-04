@@ -11,7 +11,7 @@ export default function About() {
         className="container mx-auto flex flex-wrap md:flex-row flex-col h-full items-center"
       >
         <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="text-4xl lg:text-5xl mb-4 font-large text-white">
+          <h1 className="text-3xl lg:text-5xl sm:text-2xl mb-4 text-white">
             Hi, I'm Nick 👋🏼
             <br className="hidden lg:inline-block" /> I love to build amazing
             apps.
