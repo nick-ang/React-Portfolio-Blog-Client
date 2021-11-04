@@ -28,6 +28,15 @@ class App extends Component {
             name="description"
             content="Some description."
           />
+          <meta property="og:title" content="Nick Ang - Portfolio | Blog" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://nick-ang.netlify.app/" />
+          <meta property="og:image" content="./animations/blog4.png" />
+          <meta
+            property="og:description"
+            content="Nick Ang - Portfolio | Blog"
+          />
+          <meta property="og:site_name" content="Nick Ang - Portfolio | Blog" />
           <meta
             http-equiv="Content-Security-Policy"
             content="upgrade-insecure-requests"
