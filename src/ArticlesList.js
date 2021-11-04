@@ -105,10 +105,7 @@ class ArticlesList extends Component {
     return (
       <div>
         {this.props.navbar}
-        <div
-          data-aos="fade-right"
-          className="justify-content-between"
-        >
+        <div data-aos="fade-right" className="lg:mt-20 justify-content-between">
           <br />
           <br />
           <h1 className="title-font lg:text-5xl text-5xl mb-4 font-medium text-center text-white">
@@ -131,6 +128,8 @@ class ArticlesList extends Component {
               API server
             </em>
           </p>
+          <br />
+       <br />
           <div className="container w-full flex justify-center">
             <div className="w-25 content-center">
               <Lottie loop animationData={bear} play />
