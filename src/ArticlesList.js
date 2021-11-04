@@ -107,7 +107,7 @@ class ArticlesList extends Component {
         {this.props.navbar}
         <div
           data-aos="fade-right"
-          className=" mt-10 lg:mt-20 justify-content-between"
+          className=" lg:mt-20 justify-content-between"
         >
           <br />
           <br />

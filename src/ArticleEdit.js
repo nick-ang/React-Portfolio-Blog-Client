@@ -79,7 +79,7 @@ class ArticleEdit extends Component {
     );
 
     return (
-      <div className="mt-10 lg:mt-20 ">
+      <div className=" lg:mt-20 ">
         {this.props.navbar}
         <Container style={{ textAlign: "left" }}>
           {title}
