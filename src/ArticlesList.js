@@ -118,7 +118,7 @@ class ArticlesList extends Component {
               journey through life"
             </em>
             <br/>
-            <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom of the page!</em>
+            <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom!</em>
             <br/>
             <em>Built with React front-end client and Kotlin/Spring/MySQL as REST API server</em>
 </p>
