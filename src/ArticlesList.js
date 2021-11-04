@@ -23,6 +23,7 @@ const Article = (props) => (
           <br />
           <h2 className="text-white">{ReactHtmlParser(props.title)}</h2>
           <br />
+           <br />
         </div>
         <div className="blog p-10">{ReactHtmlParser(props.content)}</div>
       </div>

@@ -95,8 +95,13 @@ class ArticleEdit extends Component {
                   value={this.state.content}
                   textareaName="title"
                   init={{
+                    images_upload_url: "postAcceptor.php",
+                    automatic_uploads: false,
+                    plugins: "image paste",
+                    images_file_types:
+                      "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
                     height: 150,
-                    menubar: false,
+                    menubar: true,
                   }}
                   onEditorChange={this.handleChange}
                 />
