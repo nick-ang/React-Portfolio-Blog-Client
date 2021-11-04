@@ -1,27 +1,46 @@
 import React, { Component } from "react";
 import { Alert, Button } from "reactstrap";
+import Lottie from "react-lottie-player";
 import { Link } from "react-router-dom";
 import ReactHtmlParser, {
   processNodes,
   convertNodeToElement,
   htmlparser2,
 } from "react-html-parser";
+import bear from "./animations/bear3.json";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Article = (props) => (
-  <div className="article-container p-2 m-2 d-flex flex-column">
+
+  <div data-aos="fade-up" className="article-container p-2 m-2 d-flex flex-column">
     <h3>{props.name}</h3>
     <div className="article-body">
-      <div className="bg-white subtitle-container">
-        <div>{ReactHtmlParser(props.title)}</div>
-        <div>{ReactHtmlParser(props.content)}</div>
+      <div className="bg-white flex flex-col subtitle-container">
+        <div className="bg-black">
+          <br />
+          <br />
+          <h2 className="text-white">{ReactHtmlParser(props.title)}</h2>
+          <br />
+        </div>
+        <div className="blog p-10">{ReactHtmlParser(props.content)}</div>
       </div>
     </div>
     <div className="article-footer">
-      <Button color="secondary" tag={Link} to={"/articles/" + props.id}>
+      <Button
+        classname="w-full"
+        color="secondary"
+        tag={Link}
+        to={"/articles/" + props.id}
+      >
         Edit
       </Button>
       <Button color="danger" onClick={() => props.remove(props.id)}>
         Delete
+      </Button>
+      <Button color="success" tag={Link} to="/articles/new">
+        Add New
       </Button>
     </div>
   </div>
@@ -70,6 +89,7 @@ class ArticlesList extends Component {
   }
 
   render() {
+    AOS.init();
     const { articles, isLoading, errorMessage } = this.state;
 
     if (isLoading) {
@@ -79,13 +99,22 @@ class ArticlesList extends Component {
     return (
       <div>
         {this.props.navbar}
-        <div className="d-flex flex-row justify-content-between p-3">
-          <h3 className="articles-title">Articles</h3>
-          <Button color="success" tag={Link} to="/articles/new">
-            Add New
-          </Button>
+        <div className=" justify-content-between">
+        <br/>
+          <h1 className="text-white articles-title text-center">Articles</h1>
+          <br />
+          <p className="text-white text-center">
+            <em>
+              "Just a place for me to keep track of my personal thoughts and my
+              journey through life. Enjoy your time here!"
+            </em>
+          </p>
+          <div className="container w-full flex justify-center">
+            <div className="w-25 content-center">
+              <Lottie loop animationData={bear} play />
+            </div>
+          </div>
         </div>
-
         {errorMessage ? (
           <div className="d-flex flex-row justify-content-center">
             <Alert color="warning" style={{ flex: 1, maxWidth: "80%" }}>

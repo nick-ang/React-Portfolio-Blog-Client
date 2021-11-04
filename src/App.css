@@ -5,6 +5,13 @@
   width: 100%;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   margin-top: 5px;
   margin-bottom: 5px;
