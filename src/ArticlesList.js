@@ -120,7 +120,7 @@ class ArticlesList extends Component {
             <br/>
             <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom of the page!</em>
             <br/>
-            <em>Built with React front-end client and Kolin/Spring/MySQL as REST API server</em>
+            <em>Built with React front-end client and Kotlin/Spring/MySQL as REST API server</em>
 </p>
           <div className="container w-full flex justify-center">
             <div className="w-25 content-center">
