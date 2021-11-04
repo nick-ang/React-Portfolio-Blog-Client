@@ -37,13 +37,15 @@ const Article = (props) => (
       >
         Edit
       </Button>
-      <Button color="danger" onClick={() => props.remove(props.id)}>
-        Delete
-      </Button>
-      <Button color="success" tag={Link} to="/articles/new">
+                <Button color="success" tag={Link} to="/articles/new">
         Add New
       </Button>
+      {/* <Button color="danger" onClick={() => props.remove(props.id)}>
+        Delete
+      </Button> */}
+
     </div>
+
   </div>
 );
 
@@ -107,13 +109,17 @@ class ArticlesList extends Component {
           Blog Articles 📚
           </h1>
           <br />
-          <p className="text-white text-center">
+          <p className="text-white text-center p-50">
             <em>
               "Just a place for me to keep a collection of my personal thoughts
               and a record of my
-              journey through life. Enjoy your time here!"
+              journey through life"
             </em>
-          </p>
+            <br/>
+            <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom of the page!</em>
+            <br/>
+            <em>Built with React front-end client and Kolin/Spring/MySQL as REST API server</em>
+</p>
           <div className="container w-full flex justify-center">
             <div className="w-25 content-center">
               <Lottie loop animationData={bear} play />

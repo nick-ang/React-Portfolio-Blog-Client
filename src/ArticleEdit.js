@@ -78,8 +78,8 @@ class ArticleEdit extends Component {
           <br />
           {errorMessage ? <Alert color="warning">{errorMessage}</Alert> : null}
           <Form onSubmit={this.handleSubmit}>
-            <div className="row">
-              <FormGroup className="title col-md-12 mb-3">
+            <div className="">
+              <FormGroup className="title col-md-20 mb-3">
                 <Label for="title">Title</Label>
                 <Input
                   type="hidden"
@@ -97,13 +97,13 @@ class ArticleEdit extends Component {
                   value={item.title || ""}
                   init={{
 
-                    height: 300,
+                    height: 175,
                     menubar: true,
                   }}
                   onEditorChange={this.handleChange}
                 />
               </FormGroup>
-              <FormGroup className="col-md-12 mb-3">
+              <FormGroup className="col-md-30 mb-3">
                 <Label for="content">Content</Label>
                 <Input
                   name="content"
@@ -120,7 +120,7 @@ class ArticleEdit extends Component {
                   textareaName="content"
                   init={{
 
-                    height: 500,
+                    height: 2000,
                     menubar: true,
                   }}
                   onEditorChange={this.handleChange}
@@ -128,9 +128,9 @@ class ArticleEdit extends Component {
               </FormGroup>
             </div>
             <FormGroup>
-              <Button color="primary" type="submit">
+              {/* <Button color="primary" type="submit">
                 Save
-              </Button>{" "}
+              </Button>{" "} */}
               <Button color="secondary" tag={Link} to="/articles">
                 Cancel
               </Button>
