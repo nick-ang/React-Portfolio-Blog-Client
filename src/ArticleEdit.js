@@ -94,7 +94,7 @@ class ArticleEdit extends Component {
                   apiKey="emehi8uy1oa5o8lchnrih1issh91tfh2wn2l3iul0tjhr1eo"
                   value={this.state.content}
                   textareaName="title"
-                  value={item.content || ""}
+                  value={item.title || ""}
                   init={{
                     images_upload_url: "postAcceptor.php",
                     automatic_uploads: false,
