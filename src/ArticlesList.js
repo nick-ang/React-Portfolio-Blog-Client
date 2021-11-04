@@ -101,7 +101,6 @@ class ArticlesList extends Component {
         {this.props.navbar}
         <div className=" justify-content-between">
         <br/>
-          <h1 className="text-white articles-title text-center">Articles</h1>
           <br />
           <p className="text-white text-center">
             <em>
