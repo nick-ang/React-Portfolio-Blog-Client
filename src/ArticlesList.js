@@ -13,7 +13,6 @@ import "aos/dist/aos.css";
 
 
 const Article = (props) => (
-
   <div data-aos="fade-up" className="article-container rounded-3xl p-2 m-2">
     <h3>{props.name}</h3>
     <div className="article-body">
@@ -21,9 +20,11 @@ const Article = (props) => (
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
-          <h2 className="title-font sm:text-4xl text-3xl font-medium text-center text-white">{ReactHtmlParser(props.title)}</h2>
+          <h2 className="title-font sm:text-4xl text-3xl font-medium text-center text-white">
+            {ReactHtmlParser(props.title)}
+          </h2>
           <br />
-           <br />
+          <br />
         </div>
         <div className="blog p-10">{ReactHtmlParser(props.content)}</div>
       </div>
@@ -37,15 +38,14 @@ const Article = (props) => (
       >
         Edit
       </Button>
-                <Button color="success" tag={Link} to="/articles/new">
-        Add New
-      </Button>
-      {/* <Button color="danger" onClick={() => props.remove(props.id)}>
+{/*
+      <Button color="danger" onClick={() => props.remove(props.id)}>
         Delete
       </Button> */}
-
     </div>
-
+    <Button color="success" tag={Link} to="/articles/new">
+      Add New
+    </Button>
   </div>
 );
 

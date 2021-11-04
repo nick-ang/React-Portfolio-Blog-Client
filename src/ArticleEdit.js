@@ -67,8 +67,15 @@ class ArticleEdit extends Component {
   }
 
   render() {
-    const { item, errorMessage, isCreate } = this.state;
-    const title = <h2>{isCreate ? "Add Article" : "Edit Article"}</h2>;
+    const { item, errorMessage } = this.state;
+    const title = (
+      <h2>
+        {this.props.match.params.id === "new" ? "Add Article" : "Edit Article"}
+      </h2>
+    );
+    const submit = (
+      <h2>{this.props.match.params.id === "new" ? "submit" : "hidden"}</h2>
+    );
 
     return (
       <div>
@@ -96,7 +103,6 @@ class ArticleEdit extends Component {
                   textareaName="title"
                   value={item.title || ""}
                   init={{
-
                     height: 175,
                     menubar: true,
                   }}
@@ -116,10 +122,9 @@ class ArticleEdit extends Component {
                 />
                 <Editor
                   id="content"
-                   value={item.content || ""}
+                  value={item.content || ""}
                   textareaName="content"
                   init={{
-
                     height: 2000,
                     menubar: true,
                   }}
@@ -127,14 +132,16 @@ class ArticleEdit extends Component {
                 />
               </FormGroup>
             </div>
-            <FormGroup>
-              {/* <Button color="primary" type="submit">
-                Save
-              </Button>{" "} */}
-              <Button color="secondary" tag={Link} to="/articles">
-                Cancel
-              </Button>
-            </FormGroup>
+            <div className={submit.props.children}>
+              <FormGroup>
+                <Button color="primary" type="submit">
+                  Save
+                </Button>
+                <Button color="secondary" tag={Link} to="/articles">
+                  Cancel
+                </Button>
+              </FormGroup>
+            </div>
           </Form>
         </Container>
       </div>
