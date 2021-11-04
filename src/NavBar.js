@@ -28,12 +28,14 @@ class NavBar extends Component {
       <Navbar color="red " dark expand="md">
         <NavbarBrand tag={Link} to="/"></NavbarBrand>
 
+        <br />
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto sm-p20" navbar>
-          <br/>
+            <br />
+
             <NavItem>
-              <NavLink href="./Articles">Blogs</NavLink>
+              <NavLink href="/Articles">Blogs</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="./#about">About</NavLink>
@@ -63,6 +65,12 @@ class NavBar extends Component {
                 <i class="fab fa-linkedin"></i>
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/">
+                <i class="fas fa-home"></i>
+              </NavLink>
+            </NavItem>
+
           </Nav>
         </Collapse>
       </Navbar>

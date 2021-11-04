@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
         <div className="flex flex-wrap ">
           {projects.map((project) => (
-            <div className=" lg:w-1/2 p-2">
+            <div className=" lg:w-1/2 p-4">
               <div data-aos="fade" className="rounded flex relative ">
                 <img
                   alt="gallery"
