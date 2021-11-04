@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <Router>
         <MetaTags>
-          <title>Nick Ang's Portfolio/Blog</title>
+          <title>Nick Ang - Portfolio | Blog</title>
           <meta
             id="meta-description"
             name="description"

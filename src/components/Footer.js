@@ -17,6 +17,9 @@ const FooterPage = () => {
               <a href="https://www.linkedin.com/in/nick-c-ang/" target="_blank">
                 <i class="fab fa-linkedin"></i>
               </a>
+              <a href="/" >
+                <i class="fas fa-home"></i>
+              </a>
             </div>
             <br />
           </div>
