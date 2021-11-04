@@ -96,11 +96,7 @@ class ArticleEdit extends Component {
                   textareaName="title"
                   value={item.title || ""}
                   init={{
-                    images_upload_url: "postAcceptor.php",
-                    automatic_uploads: false,
-                    plugins: "image paste",
-                    images_file_types:
-                      "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
+
                     height: 300,
                     menubar: true,
                   }}
@@ -123,11 +119,7 @@ class ArticleEdit extends Component {
                    value={item.content || ""}
                   textareaName="content"
                   init={{
-                    images_upload_url: "postAcceptor.php",
-                    automatic_uploads: false,
-                    plugins: "image paste",
-                    images_file_types:
-                      "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
+
                     height: 500,
                     menubar: true,
                   }}

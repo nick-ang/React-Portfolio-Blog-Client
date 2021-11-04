@@ -14,10 +14,10 @@ import "aos/dist/aos.css";
 
 const Article = (props) => (
 
-  <div data-aos="fade-up" className="article-container rounded-3xl p-2 m-2 d-flex flex-column">
+  <div data-aos="fade-up" className="article-container rounded-3xl p-2 m-2">
     <h3>{props.name}</h3>
     <div className="article-body">
-      <div className="bg-white rounded-3xl flex flex-col subtitle-container">
+      <div className="bg-white rounded-3xl subtitle-container">
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
