@@ -10,6 +10,7 @@ import ReactHtmlParser, {
 import bear from "./animations/bear3.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer";
 
 
 const Article = (props) => (
@@ -38,7 +39,7 @@ const Article = (props) => (
       >
         Edit
       </Button>
-{/*
+      {/*
       <Button color="danger" onClick={() => props.remove(props.id)}>
         Delete
       </Button> */}
@@ -46,6 +47,7 @@ const Article = (props) => (
     <Button color="success" tag={Link} to="/articles/new">
       Add New
     </Button>
+    <Footer />
   </div>
 );
 
@@ -144,6 +146,7 @@ class ArticlesList extends Component {
           {!articles || articles.length === 0 ? <p>No articles!</p> : null}
         </div>
       </div>
+
     );
   }
 }

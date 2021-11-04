@@ -7,6 +7,7 @@ import ArticleEdit from './ArticleEdit';
 import Api from './Api';
 import NavBar from './NavBar';
 import MetaTags from "react-meta-tags";
+import Footer from "./components/Footer";
 
 const api = new Api();
 
@@ -16,7 +17,7 @@ class App extends Component {
 
   render() {
     const navbar = <NavBar/>;
-
+    const footer = <Footer/>;
 
 
     return (
@@ -64,19 +65,31 @@ class App extends Component {
           <Route
             path="/"
             exact={true}
-            render={(props) => <Home {...props} api={api} navbar={navbar} />}
+            render={(props) => (
+              <Home {...props} api={api} navbar={navbar} footer={footer} />
+            )}
           />
           <Route
             path="/articles"
             exact={true}
             render={(props) => (
-              <ArticlesList {...props} api={api} navbar={navbar} />
+              <ArticlesList
+                {...props}
+                api={api}
+                navbar={navbar}
+                footer={footer}
+              />
             )}
           />
           <Route
             path="/articles/:id"
             render={(props) => (
-              <ArticleEdit {...props} api={api} navbar={navbar} />
+              <ArticleEdit
+                {...props}
+                api={api}
+                navbar={navbar}
+                footer={footer}
+              />
             )}
           />
         </Switch>

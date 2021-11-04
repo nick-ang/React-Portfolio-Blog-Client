@@ -10,15 +10,23 @@ const FooterPage = () => {
             <div class="footer-links">
               <a href="https://github.com/nick-ang" target="_blank">
                 <i class="fab fa-github"></i>
+
               </a>
               <a href="https://www.instagram.com/nickangg/" target="_blank">
                 <i class="fab fa-instagram"></i>
+
               </a>
               <a href="https://www.linkedin.com/in/nick-c-ang/" target="_blank">
                 <i class="fab fa-linkedin"></i>
+
               </a>
-              <a href="/" >
+              <a href="/">
                 <i class="fas fa-home"></i>
+
+              </a>
+              <a href="/Articles">
+                <i class="fas fa-book"></i>
+
               </a>
             </div>
             <br />

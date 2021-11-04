@@ -11,6 +11,7 @@ import {
 } from "reactstrap";
 import { Editor } from "@tinymce/tinymce-react";
 import "draft-js/dist/Draft.css";
+import Footer from "./components/Footer";
 
 class ArticleEdit extends Component {
   emptyItem = {
@@ -144,6 +145,7 @@ class ArticleEdit extends Component {
             </div>
           </Form>
         </Container>
+        <Footer />
       </div>
     );
   }
