@@ -8,10 +8,10 @@ export default function About() {
     <section id="about">
       <div
         id="about-container"
-        className="container mx-auto flex flex-wrap md:flex-row flex-col h-full items-center"
+        className="container mx-auto flex flex-wrap lg:flex-row sm:flex-col justify-center h-full items-center"
       >
         <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="text-3xl lg:text-5xl mb-4 font-large text-white">
+          <h1 className="text-4xl lg:text-5xl mb-4 font-large text-white">
             Hi, I'm Nick 👋🏼
             <br className="hidden lg:inline-block" /> I love to build amazing
             apps.
@@ -36,12 +36,13 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-3/6 w-1/6">
+        <div className="lg:max-w-lg lg:w-full md:w-3/6 w-5/6">
           <Lottie loop animationData={lottieJson} play />
         </div>
+
       </div>
       <div className="container w-full flex pb-20 justify-center">
-        <div className="w-20 content-center">
+        <div className="w-20 mt-20 content-center">
 
             <Lottie loop animationData={arrowJson} play />
 
