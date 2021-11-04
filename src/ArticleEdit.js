@@ -94,13 +94,14 @@ class ArticleEdit extends Component {
                   apiKey="emehi8uy1oa5o8lchnrih1issh91tfh2wn2l3iul0tjhr1eo"
                   value={this.state.content}
                   textareaName="title"
+                  value={item.content || ""}
                   init={{
                     images_upload_url: "postAcceptor.php",
                     automatic_uploads: false,
                     plugins: "image paste",
                     images_file_types:
                       "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
-                    height: 150,
+                    height: 300,
                     menubar: true,
                   }}
                   onEditorChange={this.handleChange}
@@ -119,7 +120,7 @@ class ArticleEdit extends Component {
                 />
                 <Editor
                   id="content"
-                  value={this.state.content}
+                   value={item.content || ""}
                   textareaName="content"
                   init={{
                     images_upload_url: "postAcceptor.php",
