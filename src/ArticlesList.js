@@ -21,7 +21,7 @@ const Article = (props) => (
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
-          <h2 className="text-white">{ReactHtmlParser(props.title)}</h2>
+          <h2 className="title-font sm:text-4xl text-3xl font-medium text-center text-white">{ReactHtmlParser(props.title)}</h2>
           <br />
            <br />
         </div>
@@ -102,10 +102,14 @@ class ArticlesList extends Component {
         {this.props.navbar}
         <div className=" justify-content-between">
         <br/>
+        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-center text-white">
+          Blog Articles
+          </h1>
           <br />
           <p className="text-white text-center">
             <em>
-              "Just a place for me to keep track of my personal thoughts and my
+              "Just a place for me to keep a collection of my personal thoughts
+              and a record of my
               journey through life. Enjoy your time here!"
             </em>
           </p>
