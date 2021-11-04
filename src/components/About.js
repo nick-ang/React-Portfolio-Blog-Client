@@ -8,7 +8,7 @@ export default function About() {
     <section id="about">
       <div
         id="about-container"
-        className=" lg:mt-40 container flex flex-wrap lg:flex-row md:flex-col sm:flex-col justify-center h-full items-center"
+        className=" container flex flex-wrap lg:flex-row md:flex-col sm:flex-col justify-center h-full items-center"
       >
         <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <br />
