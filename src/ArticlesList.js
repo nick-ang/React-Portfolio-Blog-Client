@@ -37,7 +37,7 @@ const Article = (props) => (
         tag={Link}
         to={"/articles/" + props.id}
       >
-        Edit
+        View/Edit
       </Button>
       {/*
       <Button color="danger" onClick={() => props.remove(props.id)}>

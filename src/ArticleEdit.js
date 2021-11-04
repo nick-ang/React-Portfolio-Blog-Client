@@ -144,7 +144,10 @@ class ArticleEdit extends Component {
               </FormGroup>
             </div>
           </Form>
+          <br />
+          <p className="text-center">Sorry you dont have edit permissions!</p>
         </Container>
+
         <Footer />
       </div>
     );
