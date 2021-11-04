@@ -10,9 +10,9 @@ export default function About() {
         id="about-container"
         className="container mx-auto flex flex-wrap md:flex-row flex-col h-full items-center"
       >
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Nick.
+        <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="text-4xl lg:text-5xl mb-4 font-large text-white">
+            Hi, I'm Nick 👋🏼
             <br className="hidden lg:inline-block" /> I love to build amazing
             apps.
           </h1>
