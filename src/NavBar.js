@@ -33,11 +33,18 @@ class NavBar extends Component {
   render() {
     return (
       <Navbar
-        style={{ "border-color": "black", "border-width": "1px" }}
+        style={{
+          "padding-bottom": 0,
+          "padding-top": 0,
+          "padding-left": 3,
+          "padding-right": 3,
+          "border-color": "black",
+          "border-width": "1px",
+        }}
         id="navbar"
         collapseOnSelect
-        sticky="top"
-        className="shadow text-lg bg-white sticky border-solid lg:rounded-b-3xl opacity-90"
+        fixed="top"
+        className="shadow text-lg bg-white sticky mb-10 border-solid lg:rounded-b-3xl opacity-90"
         color="white"
         light
         variant="light"
@@ -45,7 +52,10 @@ class NavBar extends Component {
       >
         <NavbarBrand tag={Link} to="/">
           <a href="#">
-            <img src={logo} style={{ width: 50, "margin-left":5, "border-radius": "50px" }} />
+            <img
+              src={logo}
+              style={{ width: 50, "margin-left": 5, "border-radius": "50px" }}
+            />
           </a>{" "}
         </NavbarBrand>
 

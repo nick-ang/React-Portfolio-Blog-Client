@@ -105,24 +105,29 @@ class ArticlesList extends Component {
     return (
       <div>
         {this.props.navbar}
-        <div className=" justify-content-between">
-        <br/>
-        <br/>
-        <h1 className="title-font lg:text-5xl text-4xl mb-4 font-medium text-center text-white">
-          Blog Articles 📚
+        <div className=" mt-20 lg:mt-20 justify-content-between">
+          <br />
+          <br />
+          <h1 className="title-font lg:text-5xl sm:text-4xl mb-4 font-medium text-center text-white">
+            Blog Articles 📚
           </h1>
           <br />
           <p className="text-white text-center px-5">
             <em>
               "Just a place for me to keep a collection of my personal thoughts
-              and a record of my
-              journey"
+              and a record of my journey"
             </em>
-            <br/>
-            <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom!</em>
-            <br/>
-            <em>Built with React front-end client and Kotlin/Spring/MySQL as REST API server</em>
-</p>
+            <br />
+            <em>
+              Enjoy your time here and feel free to type or paste your own
+              articles by clicking add new at the bottom!
+            </em>
+            <br />
+            <em>
+              Built with React front-end client and Kotlin/Spring/MySQL as REST
+              API server
+            </em>
+          </p>
           <div className="container w-full flex justify-center">
             <div className="w-25 content-center">
               <Lottie loop animationData={bear} play />
@@ -147,7 +152,6 @@ class ArticlesList extends Component {
           {!articles || articles.length === 0 ? <p>No articles!</p> : null}
         </div>
       </div>
-
     );
   }
 }
