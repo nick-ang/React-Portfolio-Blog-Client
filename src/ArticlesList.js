@@ -21,9 +21,9 @@ const Article = (props) => (
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
-          <h2 className="title-font sm:text-4xl text-3xl font-medium text-center text-white">
+          <h3 className=" sm:text-xl lg:text-3xl text-center text-white">
             {ReactHtmlParser(props.title)}
-          </h2>
+          </h3>
           <br />
           <br />
         </div>
@@ -33,7 +33,7 @@ const Article = (props) => (
     <div className="article-footer">
       <Button
         classname="w-full"
-        color="secondary"
+        color="primary"
         tag={Link}
         to={"/articles/" + props.id}
       >
@@ -44,7 +44,8 @@ const Article = (props) => (
         Delete
       </Button> */}
     </div>
-    <Button color="success" tag={Link} to="/articles/new">
+
+    <Button color="dark" tag={Link} to="/articles/new">
       Add New
     </Button>
     <Footer />
@@ -111,11 +112,11 @@ class ArticlesList extends Component {
           Blog Articles 📚
           </h1>
           <br />
-          <p className="text-white text-center p-50">
+          <p className="text-white text-center px-5">
             <em>
               "Just a place for me to keep a collection of my personal thoughts
               and a record of my
-              journey through life"
+              journey"
             </em>
             <br/>
             <em>Enjoy your time here and feel free to type or paste your own articles by clicking add new at the bottom!</em>

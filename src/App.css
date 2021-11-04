@@ -44,9 +44,12 @@
   color: #D23333;
 }
 
+.navitem{
+  color:black;
+}
 
 #about-container {
-  height: 60vh;
+
 }
 
 /* html,
