@@ -9,6 +9,7 @@ import {
   NavLink,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import logo from "./face.jpeg";
 
 class NavBar extends Component {
   constructor(props) {
@@ -36,13 +37,17 @@ class NavBar extends Component {
         id="navbar"
         collapseOnSelect
         sticky="top"
-        className="shadow text-lg bg-white sticky border-solid pb-3 lg:rounded-b-3xl opacity-90"
+        className="shadow text-lg bg-white sticky border-solid lg:rounded-b-3xl opacity-90"
         color="white"
         light
         variant="light"
         expand="md"
       >
-        <NavbarBrand tag={Link} to="/"></NavbarBrand>
+        <NavbarBrand tag={Link} to="/">
+          <a href="#">
+            <img src={logo} style={{ width: 50, "margin-left":5, "border-radius": "50px" }} />
+          </a>{" "}
+        </NavbarBrand>
 
         <br />
         <NavbarToggler

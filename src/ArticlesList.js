@@ -21,7 +21,7 @@ const Article = (props) => (
         <div className="bg-black rounded-t-3xl">
           <br />
           <br />
-          <h3 className=" sm:text-xl lg:text-3xl text-center text-white">
+          <h3 className=" sm:text-2xl lg:text-3xl text-center text-white">
             {ReactHtmlParser(props.title)}
           </h3>
           <br />

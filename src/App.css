@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .blog {
@@ -10,6 +10,15 @@
   flex-direction: column; */
   /* justify-content: center; */
   /* align-items: center; */
+}
+
+
+.navbar-light .navbar-toggler {
+width: 75px;
+}
+
+.navbar-brand{
+  width: 50px;
 }
 
 .footer {
