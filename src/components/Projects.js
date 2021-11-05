@@ -41,6 +41,7 @@ export default function Projects() {
                     {project.subtitle}
                   </h2>
                   <p className="leading-relaxed">{project.description}</p>
+                  <br />
                   <a
                     href={project.link}
                     key={project.image}

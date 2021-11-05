@@ -26,7 +26,7 @@ export const projects = [
   {
     title: "Portfolio and Blog",
     subtitle:
-      "Kotlin, Springboot, MySQL, ReactJs, AWS RDS, AWS Elastic Beanstalk",
+      "Kotlin, Springboot, MySQL, ReactJs, AWS RDS, AWS EC2, Docker",
     description:
       "The current website you are on! Built using React and Blogs stored using Kotlin Springboot API",
     image: "./blog4.png",
