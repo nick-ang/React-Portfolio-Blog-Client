@@ -10,8 +10,7 @@ import ReactHtmlParser, {
 import bear from "./animations/bear3.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "./components/Footer";
-
+import Footer from "./Footer";
 
 const Article = (props) => (
   <div data-aos="fade-up" className="article-container rounded-3xl p-2 m-2">
@@ -48,7 +47,6 @@ const Article = (props) => (
     <Button color="dark" tag={Link} to="/articles/new">
       Add New
     </Button>
-    <Footer />
   </div>
 );
 
@@ -129,7 +127,7 @@ class ArticlesList extends Component {
             </em>
           </p>
           <br />
-       <br />
+          <br />
           <div className="container w-full flex justify-center">
             <div className="w-25 content-center">
               <Lottie loop animationData={bear} play />
@@ -153,6 +151,7 @@ class ArticlesList extends Component {
           ))}
           {!articles || articles.length === 0 ? <p>No articles!</p> : null}
         </div>
+        <Footer />
       </div>
     );
   }

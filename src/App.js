@@ -7,7 +7,7 @@ import ArticleEdit from './ArticleEdit';
 import Api from './Api';
 import NavBar from './NavBar';
 import MetaTags from "react-meta-tags";
-import Footer from "./components/Footer";
+import Footer from "./Footer";
 
 const api = new Api();
 

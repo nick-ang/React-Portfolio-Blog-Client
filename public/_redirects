@@ -1,1 +1,1 @@
-/api/articles/* http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/api/articles/:splat 200
+/api/articles/* http://ec2-3-26-21-162.ap-southeast-2.compute.amazonaws.com/api/articles/:splat 200
