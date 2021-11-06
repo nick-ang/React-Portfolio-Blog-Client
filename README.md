@@ -1,6 +1,6 @@
 # React Front End to Display Blogs and Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and calls the kotlin-springboot EC2 backend API to enable create, read, update and delete via a MySQL RDS instance.
 
 https://nick-ang.netlify.app/
 
