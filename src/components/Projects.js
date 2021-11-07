@@ -33,6 +33,12 @@ export default function Projects() {
                   src={project.image}
                   style={{ width: 600, height: 270 }}
                 />
+                {/* <iframe
+                  src={project.link}
+                  title="iframe"
+                  height=""
+                  width="600"
+                ></iframe> */}
                 <div className="px-8 py-10 shadow-2xl relative z-10 w-100 border-4 rounded-3xl border-gray-800 bg-gray-800 opacity-0 hover:opacity-100">
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}

@@ -59,7 +59,6 @@ class NavBar extends Component {
           </a>{" "}
         </NavbarBrand>
 
-        <br />
         <NavbarToggler
           style={{ color: "black" }}
           className="navitem"
@@ -71,9 +70,7 @@ class NavBar extends Component {
           isOpen={this.state.isOpen}
           navbar
         >
-          <Nav className="navitem ml-auto" navbar>
-            <br />
-
+          <Nav className="navitem m-auto" navbar>
             <NavItem>
               <NavLink
                 eventKey="1"
@@ -157,6 +154,7 @@ class NavBar extends Component {
                 onClick={this.toggle}
                 eventKey="8"
                 style={{ color: "black" }}
+                className="navitem"
                 href="https://www.linkedin.com/in/nick-c-ang/"
                 target="_blank"
               >
@@ -167,6 +165,7 @@ class NavBar extends Component {
               <NavLink
                 onClick={this.toggle}
                 eventKey="9"
+                className="navitem"
                 style={{ color: "black" }}
                 href="/"
               >

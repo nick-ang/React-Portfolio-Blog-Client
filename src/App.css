@@ -22,6 +22,19 @@
   width: 50px;
 }
 
+.navitem.nav-link{
+
+    border-top-width: 2px;
+    border-color: #8080801c;
+    padding:10px;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  background-color: #c8c8c8;
+  text-decoration: none;
+}
+
 .footer {
   margin-top: 5px;
   margin-bottom: 5px;
