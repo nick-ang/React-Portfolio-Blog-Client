@@ -11,6 +11,7 @@ import bear from "./animations/bear3.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
+import load from "./load2.json";
 
 const Article = (props) => (
   <div data-aos="fade-up" className="article-container rounded-3xl p-2 m-2">
@@ -97,7 +98,9 @@ class ArticlesList extends Component {
     const { articles, isLoading, errorMessage } = this.state;
 
     if (isLoading) {
-      return <p>Loading...</p>;
+      return<p>
+        <Lottie loop animationData={load} play />
+      </p>;
     }
 
     return (
