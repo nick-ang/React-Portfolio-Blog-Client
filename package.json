@@ -14,6 +14,7 @@
     "bootstrap": "^4.6.1",
     "draft-js": "^0.11.7",
     "interweave": "^12.9.0",
+    "localtunnel": "^2.0.2",
     "lottie-web": "^5.7.14",
     "mdbreact": "^5.1.0",
     "react": "^17.0.2",
