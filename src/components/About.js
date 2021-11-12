@@ -12,6 +12,7 @@ export default function About() {
       >
         <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <br />
+
           <h1 className="text-4xl lg:text-5xl mb-4 font-large text-white">
             Hi, I'm Nick 👋🏼
             <br className="hidden lg:inline-block" /> I love to build amazing
