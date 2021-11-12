@@ -1,5 +1,7 @@
 # React Front End to Display Blogs and Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf32cb1a-d19d-4797-beb9-802ef255f898/deploy-status)](https://app.netlify.com/sites/nick-ang/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and calls the kotlin-springboot EC2 backend API to enable create, read, update and delete functions for the blog feature via a MySQL RDS instance. Blogs are entered and stored as rich text through Tiny MCE
 
 https://nick-ang.netlify.app/
