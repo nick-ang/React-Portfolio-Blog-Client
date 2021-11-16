@@ -74,7 +74,7 @@ class ArticlesList extends Component {
       const body = await response.json();
       const articles = body;
       this.setState({
-        articles: articles,
+        articles: articles.reverse(),
         isLoading: false,
         errorMessage: null,
       });
