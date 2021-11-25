@@ -50,6 +50,7 @@ export default function Projects() {
                   <br />
                   <a
                     href={project.link}
+                    target="_blank"
                     key={project.image}
                     className="sm:w-1/2 p-4"
                   >
