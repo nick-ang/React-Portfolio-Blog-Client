@@ -5,7 +5,7 @@ export const projects = [
     description:
       "An all in one productivity app where users can create widgets such as to-do lists, bookmarks, timers and calculators. A great app for everything in one place!",
     image: "./og.png",
-    link: "https://saver-task-manager.herokuapp.com/users/sign_in",
+    link: "https://saver-productivity-manager.herokuapp.com/",
   },
   {
     title: "PNP Task Manager",
