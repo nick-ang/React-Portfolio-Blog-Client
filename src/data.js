@@ -5,7 +5,7 @@ export const projects = [
     description:
       "An all in one productivity app where users can create widgets such as to-do lists, bookmarks, timers and calculators. A great app for everything in one place!",
     image: "./og.png",
-    link: "https://saver-productivity-manager.herokuapp.com/",
+    link: "https://saver.fly.dev/",
   },
   {
     title: "PNP Task Manager",
@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A freelance application build for P&NP to assist project management including chatrooms, draggable kanbans, search, logins, admin, wikis, sticky notes and visualisations.",
     image: "./pnp.png",
-    link: "https://pnp-task-manager.herokuapp.com/users/sign_in",
+    link: "https://pnp-manager.fly.dev/",
   },
   {
     title: "Unihack",
