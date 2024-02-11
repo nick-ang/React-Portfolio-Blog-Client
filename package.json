@@ -32,7 +32,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -60,5 +60,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://blogspringbootmysqlkotlin-env.eba-vpdedufk.ap-southeast-2.elasticbeanstalk.com/"
+  "proxy": "https://nang-blog.onrender.com/"
 }
